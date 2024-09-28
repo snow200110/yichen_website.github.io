@@ -1,0 +1,127 @@
+*{
+    background-color: #F1E5D1;
+    color:#987070;
+    font-family: "Schibsted Grotesk", sans-serif;
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+/* 取消liul預設的內縮及樣式 */
+li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*文字樣式設定*/
+.lxgw-wenkai-tc-light {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.lxgw-wenkai-tc-regular {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.lxgw-wenkai-tc-bold {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*選單設定*/
+
+ul.drop-down-menu {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul.drop-down-menu ul li {
+    font-size: 20px;
+}
+
+ul.drop-down-menu ul {
+    position: absolute;
+    margin-inline-end: 0%;
+}
+
+ul.drop-down-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+
+ul.drop-down-menu > li:last-child {
+    border-right: none;
+}
+
+ul.drop-down-menu > li {
+    float: right; /* 只有第一層是靠左對齊*/
+}
+
+ul.drop-down-menu ul { /*隱藏次選單*/
+    display: none;
+}
+
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+    display: block;
+}
+a.menu-background{
+    display:inline-block;
+    text-align: right;
+    background-color: white;
+    width: 250px;
+    height: 30px;
+    padding-inline-end: 7px;
+    color:#987070;
+    font-size: 20px;
+}
+a.menu-background:hover { /* 滑鼠滑入按鈕變色*/
+    background-color:#987070;
+    color: #fff;
+}
+
+.about{
+    display: flex;
+    border: 2.3px solid #987070;
+    margin: 70px;
+}
+#selfphoto{
+    float: inline-start;
+    margin: 20px;
+    width: 430px;
+    order: 0;
+}
+
+.hello{
+    font-size: 50px;
+}
+.introduction{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+#ins{
+    position: relative;
+    margin-top: 550px;
+    margin-right: 30px;
+    width: 40px;
+}
+

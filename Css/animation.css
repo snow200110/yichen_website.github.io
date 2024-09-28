@@ -1,0 +1,43 @@
+/*選單按鈕設定與動畫*/
+.btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    min-width: 250px;
+    color: #987070;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;/*隱藏四個span*/
+    transition: 0.5s;
+}
+.btn span {
+    position: absolute;
+    width: 25%;
+    height: 130%;
+    background-color: #987070;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+.btn:hover{
+    color: white;
+}
+
+.btn:hover span {
+    transform: translateY(0) scale(2);
+}
+.btn span:nth-child(1) {
+    --n: 1;
+}
+.btn span:nth-child(2) {
+    --n: 2;
+}
+.btn span:nth-child(3) {
+    --n: 3;
+}
+.btn span:nth-child(4) {
+    --n: 4;
+}
